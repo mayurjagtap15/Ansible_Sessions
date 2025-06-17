@@ -1,3 +1,4 @@
+[all]
 3.149.27.112 ansible_user=ubuntu
 18.189.184.225 ansible_user=ubuntu
 18.226.180.38 ansible_user=ubuntu
