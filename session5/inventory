@@ -1,0 +1,10 @@
+[web_servers]
+18.191.205.132 ansible_user=ec2-user apache_package=httpd php_package=php
+3.149.27.112 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
+[db_servers]
+18.189.184.225 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
+18.226.180.38 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
+18.191.205.132 ansible_user=ec2-user apache_package=httpd php_package=php
+[file_servers]
+18.191.205.132 ansible_user=ec2-user apache_package=httpd php_package=ph
+18.226.180.38 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
