@@ -4,28 +4,24 @@
   become: true
   tasks:
 
-    - name: Install Apache2 package
+    - name: Install Apache2 package on Ubuntu
       apt:
-        name: apache2
+        name: 
+          - apache2
+          - libapache2-mod-php
         state: latest
+        update_cache: yes  
       when: ansible_distribution == "ubuntu"
 
-    - name: Install php
-      apt:
-        name: libapache2-mod-php
-        state: latest
-      when: ansible_distribution == "ubuntu"
 
-    - name: Install httpd package
+    - name: Install httpd package on RedHat
       yum:
-        name: httpd
-        state: enabled
+        name: 
+          - httpd
+          - php
+        state: latest
+        update_cache: yes    
       when: ansible_distribution == "RedHat"
 
-    - name: Install php
-      yum:
-        name: php
-        state: latest
-      when: ansible_distribution == "RedHat"
 
           
